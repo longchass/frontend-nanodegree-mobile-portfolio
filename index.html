@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109165852-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-109165852-1');
-</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
-    <style>html {
+
+    <style>
+      html {
   font-size: 100%;
   overflow-y: scroll;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -30,6 +23,7 @@ a:visited { color: #61C; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { color: #c00; outline: 0; }
 
+b, strong { font-weight: bold; }
 pre, code { font-family: monospace, monospace; font-size: 1em; }
 ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
 img { border: 0; max-width: 100%; }
@@ -64,23 +58,8 @@ footer span { float: right; font-style: italic; }
   header p { padding-left: 4.5em;}
 }
 </style>
-<!--
-    Hmm, what is the impact of web fonts on speed? Measure it...22s delay --><!--
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
-
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+    <link href="css/print.css" rel="stylesheet" media="print">
   </head>
 
   <body>
@@ -91,7 +70,7 @@ footer span { float: right; font-style: italic; }
 
     <div class="container">
       <div class="hero">
-        <b>I love web development!</b> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
+        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
       </div>
 
       <div class="content">
@@ -115,16 +94,40 @@ footer span { float: right; font-style: italic; }
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" src="views/images/pizzeria-optimized.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
         </ul>
-      </div>
-
-      <footer>
-        <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
-      </footer>
     </div>
+
+    <footer>
+      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+    </footer>
+
+    <script>
+      WebFontConfig = {
+        google: ['Open Sans:400,700']
+      };
+
+      (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+      s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
+
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+      // TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+
+    <script async src="js/perfmatters.js"></script>
   </body>
 </html>
